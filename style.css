@@ -1,0 +1,70 @@
+.para {
+  color: rgb(7, 173, 29);
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  font-size: larger;
+}
+.heading {
+  color: black;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-size: larger;
+  font-weight: 700px;
+}
+.container {
+  display: flex;
+  padding-left: 400px;
+  padding-top: 200px;
+  gap: 150px;
+}
+.rollbutton {
+  margin-top: 20px;
+  height: 40px;
+  width: 100px;
+  background-color: rgb(7, 173, 29);
+  border: none;
+  cursor: pointer;
+}
+
+.rollbutton:disabled {
+  background-color: grey;
+}
+.score1 {
+  padding-left: 40px;
+  font-weight: bolder;
+  font-size: larger;
+}
+.score2 {
+  padding-left: 40px;
+  font-weight: bolder;
+  font-size: larger;
+}
+.reset {
+  margin-left: 700px;
+  margin-top: 50px;
+  height: 40px;
+  width: 100px;
+  background-color: palevioletred;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .dice-box {
+    margin: 20px 0;
+  }
+  .reset {
+    margin: 20px auto;
+    width: 150px;
+  }
+}
